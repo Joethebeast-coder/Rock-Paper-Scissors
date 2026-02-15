@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
-      <title>Rock Paper Scissors</title>
-<body style="Background-color:black;">
-      <h1 style="color:white; text-align: center; font-family: arial;">Rock Paper Scissors</h1>
-      <br>
-      <pre style="color:white; text-align: left; font-family: arial;">import random
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock Paper Scissors</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 40px;
+        background-color: #0d1117;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .code-box {
+        background-color: #161b22;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        overflow-x: auto;
+    }
+
+    pre {
+        margin: 0;
+        color: #c9d1d9;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        white-space: pre-wrap;
+    }
+
+    .code-box::before {
+        content: "";
+        display: block;
+        height: 4px;
+        background: linear-gradient(90deg, #58a6ff, #bc8cff);
+        border-radius: 12px 12px 0 0;
+        margin: -25px -25px 20px -25px;
+    }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Rock Paper Scissors (Python)</h1>
+
+    <div class="code-box">
+<pre>import random
 
 while True:
     try:
@@ -52,7 +108,8 @@ while True:
     except ValueError:
         print("DONT DO THAT")
     except NameError:
-        print("DONT DO THAT")
-</pre>
-       
-
+        print("DONT DO THAT")</pre>
+    </div>
+</div>
+</body>
+</html>
